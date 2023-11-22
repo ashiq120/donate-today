@@ -1,0 +1,347 @@
+:root {
+    --primary-color: #FF5959;
+    --plan2: #FF5959;
+    --plan3: #FFF4D6;
+}
+
+/* Default CSS */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'open sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: o;
+}
+main {
+    margin: 0 5rem;
+    text-align: center;
+}
+button {
+    cursor: pointer;
+}
+
+i {
+    font-size: 2rem;
+    color: #000;
+}
+
+
+.title {
+    font-size: 2rem;
+}
+.primary-btn {
+    padding: 10px 30px;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.description {
+    margin: 1.3rem 0;
+    color: #707070;
+    padding: 0 5rem;
+}
+.navigate a{
+    color: #FF5959;
+    font-weight: 600;
+}
+.navigate{
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+    filter: invert(1) sepia(1) saturate(1) hue-rotate(180deg);
+    padding: .3rem 1rem;
+    border-radius: 10px;
+    position: fixed;
+    bottom:20px;
+    right: 25px;
+}
+
+/* Banner Section CSS Start */
+.banner {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url(../images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.banner2{
+    background:url(../images/Ellipse\ 257.png) no-repeat right;
+    background-position: bottom right;
+    height: 100vh;
+}
+.banner-content {
+    width: 50%;
+}
+.banner-img{
+    width: 100%;
+    max-height: 100%;
+}
+.banner-content2 {
+    width: 100%;
+    padding-left: 30px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+}
+.banner-content2 div{
+    width: 60%;
+}
+.banner-content2 .banner-title{
+    width: 60%;
+}
+.banner-content2 .banner-description{
+    width: 55%;
+}
+.banner-title {
+    font-size: 3rem;
+    color: #fff;
+}
+.banner-content2 .banner-title {
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+}
+
+.banner-description {
+    color: #fff;
+    margin: 1.3rem 0;
+}
+.banner-content2 .banner-description {
+    color: rgb(90, 89, 89);
+    margin: 1.3rem 0;
+}
+.banner2-btn{
+    color: #000;
+}
+.banner2-btn2{
+    border: none;
+    margin-left: 1rem;
+    background: transparent;
+}
+.banner2-btn i{
+    font-size: 1rem;
+    color: #707070;
+}
+
+
+.donate-section,
+.donate-plan,
+.blog-section {
+    margin: 6rem 0;
+}
+
+/* Banner Section CSS End */
+
+/* Donate Section CSS End */
+
+.donate-content {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.donate-content ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.donate-content ul li {
+    padding: 2rem;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #707070;
+}
+
+.donate-content ul li:nth-child(2) {
+    border: 2px solid #FF5959;
+    background: var(--plan3);
+}
+
+.custom-plan {
+    display: flex;
+    flex-direction: column;
+    /* width: 30%; */
+    margin: 0 auto;
+}
+
+.custom-plan input {
+    border: none;
+    border-bottom: 2px solid #DADADA;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    text-align: center;
+    outline: none;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.custom-plan button {
+    width: 200px;
+    margin: auto auto;
+}
+
+/* Donate Section CSS End */
+
+/* Plan Section CSS Start */
+
+.donate-plan-content {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.donate-plan-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.donate-plan-card .title {
+    font-size: 1rem;
+    text-align: left;
+}
+
+.donate-plan-card .description {
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.plan-card {
+    padding: 2rem;
+    text-align: left;
+}
+
+.plan-card img {
+    margin-bottom: 10px;
+}
+
+.plan-card:first-child {
+    background: rgba(79, 157, 166, 0.3);
+}
+
+.plan-card:nth-child(2) {
+    margin: 0 1rem;
+    background: rgba(255, 89, 89, 0.3);
+}
+
+.plan-card:last-child {
+    background: var(--plan3);
+}
+
+/* Plan Section CSS End */
+
+/* Blog Section CSS Start */
+.blog-section {}
+
+.blogs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.blog-card .blog {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.blog-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blog-card-content {
+    flex-direction: column;
+    text-align: left;
+    margin-right: 5rem;
+}
+
+.blog-card-content .title {
+    font-size: 30px;
+}
+
+.blog-description {
+    font-size: 16px;
+    margin: 1.3rem 0;
+}
+
+.lastblog {
+    margin-left: 5rem;
+    margin-right: 0;
+}
+
+/* Blog Section CSS End */
+
+/* Newsletter Section CSS Start */
+.newsletter-content {
+    width: 60%;
+    margin: 4rem auto;
+    margin-bottom: 6rem;
+}
+
+.newsletterForm {
+    padding: 3rem;
+    background: #FFF4D6;
+}
+
+.newsletterForm input {
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #AA9F9F;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-right: -3px;
+}
+
+.newsletterForm button {
+    border-radius: 0 5px 5px 0;
+    margin-left: -3px;
+}
+
+/* Newsletter Section CSS End */
+
+/* Footer Section CSS Start */
+footer {
+    padding: 2rem 0;
+    text-align: center;
+    color: white;
+    background: #121527;
+}
+
+footer h2 {
+    font-family: 'Lobster', cursive;
+    margin-bottom: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Footer Section CSS End */
